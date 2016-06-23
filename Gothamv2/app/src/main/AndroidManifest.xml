@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sachin.gothamv2">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.sachin.gothamv2.MainActivity"
+            android:background="@color/Blue"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".menu"
+            android:background="@color/Blue"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.menu" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Graph"
+            android:label="@string/title_activity_graph"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Record"
+            android:label="@string/title_activity_record"
+            android:parentActivityName=".Graph" />
+        <activity
+            android:name=".Plots"
+            android:label="@string/title_activity_plot"
+            android:parentActivityName=".Record" />
+
+    </application>
+
+</manifest>

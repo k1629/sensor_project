@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Analyzer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_graph">Live Graph</string>
+    <string name="title_activity_record">Record</string>
+    <string name="title_activity_plot">Comparative Analysis</string>
+    <color name="Blue">#ffffff</color>
+</resources>

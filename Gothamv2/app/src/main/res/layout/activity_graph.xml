@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sachin.gothamv2.Graph"
+    android:background="@color/accent_material_light"
+    android:clickable="false">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/Start_button"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/checkBox_2"
+        android:layout_toLeftOf="@+id/checkBox_2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/Stop_button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/com_button" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/checkBox_1"
+        android:layout_marginBottom="38dp"
+        android:checked="false"
+        android:layout_above="@+id/com_button"
+        android:layout_toLeftOf="@+id/Start_button"
+        android:layout_toStartOf="@+id/Start_button" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Y"
+        android:id="@+id/checkBox_2"
+        android:checked="false"
+        android:layout_toLeftOf="@+id/Stop_button"
+        android:layout_alignTop="@+id/checkBox_1"
+        android:layout_alignLeft="@+id/com_button"
+        android:layout_alignStart="@+id/com_button"
+        android:layout_alignBottom="@+id/checkBox_1"
+        android:backgroundTint="#ffffff" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph"
+        android:layout_below="@+id/Start_button"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Z"
+        android:id="@+id/checkBox_3"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox_2"
+        android:layout_alignRight="@+id/Stop_button"
+        android:layout_alignEnd="@+id/Stop_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compare"
+        android:id="@+id/com_button"
+        android:background="@color/Blue"
+        android:onClick="Compare"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+</RelativeLayout>
